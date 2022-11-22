@@ -6,6 +6,9 @@
 
 
     </bean>
+    <bean id="circle" class="org.satish.Spring.Circle">
+        <property name="center" ref="pointA"/>
+    </bean>
 
 <!--    here point object initialization happens-->
     <bean id="pointA" class="org.satish.Spring.Point">

@@ -2,7 +2,7 @@ package org.satish.Spring;
 
 
 
-public class Triangle {
+public class Triangle implements Shape{
    private Point pointA;
    private Point pointB;
    private Point pointC;
@@ -31,6 +31,7 @@ public class Triangle {
         this.pointC = pointC;
     }
 
+    @Override
     public void draw(){
         System.out.println("Point A = ("+ getPointA().getX()+","+getPointA().getY()+")");
         System.out.println("Point B = ("+ getPointB().getX()+","+getPointB().getY()+")");
